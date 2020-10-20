@@ -119,5 +119,42 @@ while tracker !=1:
   print()
   print()
   
+  
+  
+  counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "Which of the following numbers is a counting number?")
+  print("   a) -4.5")
+  print("   b) 15/2")
+  print("   c) 0")
+  print("   d) 5")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Wrong. counting numbers are whole positive numbers."
+    score -=1
+  elif answer == "b":
+    output = "Wrong. counting numbers are whole positive numbers."
+    score -=1
+  elif answer == "c":
+    output = "Wrong. 0 is not a counting number as you can't count 0"
+    tracker =1
+    score +=1
+  elif answer == "d":
+    output = "This is correct!"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+  
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
 print("End of quiz!")
   
